@@ -155,7 +155,7 @@ function renderMovieInDetail(movie){
 		<div class="detail-movie-title">
 			<span>${movie.title}</span>
 			<div class="detail-movie-rating">
-				<img src="./res/rating-icon.png">
+				<img src="./rating-icon.png">
 				<span>${movie.vote_average}</span>
 			</div>
 		</div>
