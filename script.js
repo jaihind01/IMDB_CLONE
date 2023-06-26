@@ -42,7 +42,7 @@ function renderList(actionForButton){
 		<div class="movie-title-container">
 			<span>${currentMovieStack[i].title}</span>
 			<div class="rating-container">
-				<img src="./res/rating-icon.png" alt="">
+				<img src="./rating-icon.png" alt="">
 				<span>${currentMovieStack[i].vote_average}</span>
 			</div>
 		</div>
@@ -50,7 +50,7 @@ function renderList(actionForButton){
 		<button id="${currentMovieStack[i].id}" onclick="getMovieInDetail(this)" style="height:40px;"> Movie Details </button>
 
 		<button onclick="${actionForButton}(this)" class="add-to-favourite-button text-icon-button" data-id="${currentMovieStack[i].id}" >
-			<img src="./res/favourites-icon.png">
+			<img src="./favourites-icon.png">
 			<span>${actionForButton}</span>
 		</button>
 		`;
