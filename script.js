@@ -78,7 +78,7 @@ searchBox.addEventListener('keyup' , ()=>{
 	
 	if(searchString.length > 0){
 		let searchStringURI = encodeURI(searchString);
-		const searchResult = fetch(`https://api.themoviedb.org/3/search/movie?api_key=a92b03775ad91060d4ceffb2c8ee6eea&language=en-US&page=1&include_adult=false&query=${searchStringURI}`)
+		const searchResult = fetch(`https://api.themoviedb.org/3/search/movie?api_key=dd4c3cde7286255c464a7426b16d1c77&language=en-US&page=1&include_adult=false&query=${searchStringURI}`)
 			.then((response) => response.json())
 			.then((data) =>{
 				currentMovieStack = data.results;
