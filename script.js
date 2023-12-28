@@ -13,7 +13,7 @@ function showAlert(message){
 
 // gets tranding movies from the server and renders as movie cards
 function getTrandingMovies(){
-	const tmdb = fetch("https://api.themoviedb.org/3/trending/movie/day?api_key=a92b03775ad91060d4ceffb2c8ee6eea")
+	const tmdb = fetch("https://api.themoviedb.org/3/trending/movie/day?api_key=dd4c3cde7286255c464a7426b16d1c77")
 	.then((response) => response.json())
 	.then((data) => {
 		currentMovieStack = data.results;
