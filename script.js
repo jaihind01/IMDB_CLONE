@@ -174,7 +174,7 @@ function renderMovieInDetail(movie){
 // fetch the details of of movie and send it to renderMovieDetails to display
 function getMovieInDetail(element){
 
-	fetch(`https://api.themoviedb.org/3/movie/${element.getAttribute('id')}?api_key=a92b03775ad91060d4ceffb2c8ee6eea&language=en-US`)
+	fetch(`https://api.themoviedb.org/3/movie/${element.getAttribute('id')}?api_key=dd4c3cde7286255c464a7426b16d1c77&language=en-US`)
 		.then((response) => response.json())
 		.then((data) => renderMovieInDetail(data))
 		.catch((err) => printError(err));
